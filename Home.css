@@ -1,15 +1,15 @@
 .img1 {
     margin-top: 10px;
     margin-left: 20px;
-    width: 100%;
-    height: 90%;
+    /* width: 100%;
+    height: 100%; */
 }
 
 .profileImage {
     width: 350px;
     height: 350px;
     border-radius: 100%;
-    margin-left: 100px;
+    margin-left: 30px;
     margin-top: 100px;
 }
 
@@ -39,12 +39,14 @@
 }
 
 body {
+    width: 100%;
     padding: 0px;
     margin: 0px;
 }
 
 .container {
     display: flex;
+    padding: 10px;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
@@ -122,36 +124,42 @@ body {
         text-align: left;
     }
 }
-
-.skill-h2 {
+.skills-section {
     text-align: center;
-    margin-top: 150px;
-    font-size: 40px;
+    margin-bottom: 20px;
+}
+.h2 {
+    font-size: 30px;
     color: blue;
 }
-
-.skills-section {
-    margin: 20px;
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.skills-section h2 {
-    text-align: center;
+.skills h2 {
     color: #50b3a2;
 }
 
 .skills-list {
     list-style: none;
     padding: 0;
+    width: 30%;
 }
-.skills-list li:hover {
-    background-color: lightgreen;
-    cursor: pointer; /* Optional: Change cursor on hover */
-}
+
 .skills-list li {
     background: #fff;
     padding: 10px;
-    margin: 10px 0;
-    border-left: #50b3a2 5px solid;
+    margin: 10px;
+    border-left: 5px solid #50b3a2;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.skills-list li:hover {
+    background-color: lightgreen;
 }
 
 .projects-section h2 {
@@ -213,20 +221,20 @@ body {
 
 
 .content-wrapper {
-    flex: 2;
+    flex: 1;
     /* Take remaining space */
 }
 
 .contact {
-    font-size: 900%;
+    font-size: 700%;
 }
 
 .text-content {
-    flex: 2;
+    
     /* Take twice the space of content-wrapper */
     padding: 0 20px;
     /* Padding around text content */
-    margin-left: 200px;
+    margin-left: 100px;
     margin-top: 60px;
 }
 
