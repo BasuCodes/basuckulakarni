@@ -1,8 +1,10 @@
-.img1{
-    margin-top: 20px;
-    width:110%;
-    height: 110%;
+.img1 {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 100%;
+    height: 90%;
 }
+
 .profileImage {
     width: 350px;
     height: 350px;
@@ -12,46 +14,60 @@
 }
 
 .headline {
-    margin-top: 180px;
+    margin-top: 100px;
     text-align: center;
     font-size: 30px;
 }
+
 .button1 {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff; /* Button background color */
-    color: white; /* Button text color */
+    background-color: #007bff;
+    /* Button background color */
+    color: white;
+    /* Button text color */
     text-decoration: none;
-    border-radius: 5px; /* Rounded corners for buttons */
-    margin-right: 10px; /* Space between buttons */
+    border-radius: 5px;
+    /* Rounded corners for buttons */
+    margin-right: 10px;
+    /* Space between buttons */
 }
+
 .button1:last-child {
-    margin-left: 40%; /* Remove margin from last button */
+    margin-left: 40%;
+    /* Remove margin from last button */
 }
+
 body {
     padding: 0px;
-    margin: 0px;    
+    margin: 0px;
 }
 
 .container {
-    display: flex;        
-    justify-content: center;    
-    gap: 30px;       
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
+    background-color:#ddd;
+    border-radius: 30px;
+    border: 1px solid white;
 }
 
-.container > * {
-    flex: 1;    
+.container>* {
+    flex: 1;
     text-align: justify;
 }
-.summary{
+
+.summary {
     font-size: larger;
     margin-top: 100px;
 }
-.edu-section h2{
+
+.edu-section h2 {
     text-align: center;
     color: #50b3a2;
 }
+
 .responsive-table {
     width: 100%;
     border-collapse: collapse;
@@ -74,7 +90,7 @@ body {
 }
 
 .responsive-table tr:hover {
-    background-color: #ddd;
+    background-color: #50b3a2;
 }
 
 @media screen and (max-width: 600px) {
@@ -106,17 +122,19 @@ body {
         text-align: left;
     }
 }
-.skill-h2{
+
+.skill-h2 {
     text-align: center;
     margin-top: 150px;
     font-size: 40px;
     color: blue;
 }
+
 .skills-section {
-    margin: 20px ;
+    margin: 20px;
 }
 
-.skills-section h2 {    
+.skills-section h2 {
     text-align: center;
     color: #50b3a2;
 }
@@ -125,21 +143,27 @@ body {
     list-style: none;
     padding: 0;
 }
-
+.skills-list li:hover {
+    background-color: lightgreen;
+    cursor: pointer; /* Optional: Change cursor on hover */
+}
 .skills-list li {
     background: #fff;
     padding: 10px;
     margin: 10px 0;
     border-left: #50b3a2 5px solid;
 }
-.projects-section h2{
+
+.projects-section h2 {
     text-align: center;
     color: #50b3a2;
 }
-.certificates-section h2{
+
+.certificates-section h2 {
     text-align: center;
     color: #50b3a2;
 }
+
 .certificates-container {
     display: flex;
     justify-content: space-around;
@@ -147,7 +171,8 @@ body {
 }
 
 .certificate {
-    width: 30%; /* Adjust width as per your layout preference */
+    width: 30%;
+    /* Adjust width as per your layout preference */
     margin: 10px;
     text-align: center;
 }
@@ -175,71 +200,92 @@ body {
     line-height: 1.6;
     color: #666;
 }
+
 .flex-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 800px; /* Adjust max-width as needed */
+    max-width: 800px;
+    /* Adjust max-width as needed */
     margin-bottom: 20px;
 }
 
-.reach-out-section {
-    padding: 40px 0;
-}
+
 
 .content-wrapper {
-    flex: 2; /* Take remaining space */
+    flex: 2;
+    /* Take remaining space */
 }
 
-.left-image {
-    width: 80%;
-    border-radius: 15px;
+.contact {
+    font-size: 900%;
 }
 
 .text-content {
-    flex: 2; /* Take twice the space of content-wrapper */
-    padding: 0 20px; /* Padding around text content */    
+    flex: 2;
+    /* Take twice the space of content-wrapper */
+    padding: 0 20px;
+    /* Padding around text content */
+    margin-left: 200px;
+    margin-top: 60px;
 }
 
 .text-content h2 {
-    margin-top: 0; /* Remove top margin for h2 */
-    font-size: 30px; /* Adjust font size */
-    color:blue; /* Text color */
+    margin-top: 0;
+    /* Remove top margin for h2 */
+    font-size: 30px;
+    /* Adjust font size */
+    color: blue;
+    /* Text color */
 }
 
 .text-content p {
-    margin: 10px 0; /* Vertical margin for paragraphs */
-    font-size: 16px; /* Font size for paragraphs */
-    line-height: 1.6; /* Line height for better readability */
+    margin: 10px 0;
+    /* Vertical margin for paragraphs */
+    font-size: 16px;
+    /* Font size for paragraphs */
+    line-height: 1.6;
+    /* Line height for better readability */
 }
 
 .text-content b {
-    font-weight: bold; /* Make text bold */
+    font-weight: bold;
+    /* Make text bold */
 }
 
 .buttons-container {
-    margin-top: 20px; /* Space above buttons */
+    margin-top: 20px;
+    /* Space above buttons */
 }
 
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff; /* Button background color */
-    color: white; /* Button text color */
+    background-color: #007bff;
+    /* Button background color */
+    color: white;
+    /* Button text color */
     text-decoration: none;
-    border-radius: 5px; /* Rounded corners for buttons */
-    margin-right: 10px; /* Space between buttons */
+    border-radius: 5px;
+    /* Rounded corners for buttons */
+    margin-right: 10px;
+    /* Space between buttons */
 }
 
 .button:last-child {
-    margin-right: 0; /* Remove margin from last button */
+    margin-right: 0;
+    /* Remove margin from last button */
 }
-.fab{
+
+.fab {
     font-size: 30px;
     width: 50px;
     color: black;
 }
+
 .fab:hover {
-    transform: rotate(180deg); /* Adjust the rotation angle as needed */
-    transition: transform 0.3s ease; /* Optional: Add smooth transition */
+    transform: rotate(180deg);
+    /* Adjust the rotation angle as needed */
+    transition: transform 0.3s ease;
+    /* Optional: Add smooth transition */
 }
